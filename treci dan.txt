@@ -1,0 +1,74 @@
+[self.textBox1.text intValue] -> pretvara text u int
+
+ako pokušavamo string "ABC" prebaciti u double, neæe baciti izuzetak nego æe samo vratiti 0
+
+
+*ime -> naziv varijable uvijek tako
+
+rad sa klasama:
+
+new u c++ -> self.localStudent = [Student alloc];  ( = new Student())
+- nakon izvršavanja alokacije poziva se defaultni konstruktor koji postavlja svaki property na defaultnu vrijednost
+- definisanje instance klase u .h kontrolera : @property Student *localStudent;  (po defaultu je public, ako hoæemo da ne bude public sklonimo ga iz .h i pomjerimo u .m ovu definiciju)
+
+- poziv metode : self.TextBox.text = [self.localStudent getFullName]
+- za promjenu : [self.localStudent changeFirstAndLastName:firstName lastName:lastName] 
+
+- definisanje klase : 
+u Classes .h i .m fajlovi
+- .m:
+
+-@implementation Student
+-#import Student.h
+-(id)nitWithFirstName:(NSString *)firstName lastName:(NSString *)lastName
+(na neki naèin, ime metode je ime prvog parametra, razmak pa ime drugog parametra ide ako imamo više; kad pozivamo metodu opet moramo imenovati koji parametar šaljemo i koju njegovu vrijednost)
+
+- kad pravimo sami svoj konstruktor, obavezno je imati : self = [super self] -> ako je naslijeðena klasa poziva roditelja i njegove metode, da bismo mijenjali nešto što smo naslijedili ili da definišemo svoje stvari
+
+getteri i setteri - dodani automatski dodavanjem property-ja u klasi
+
+(NSString*)getFullName { NSString *fullName = [[NSString alloc] inizWithFormat:@"%@,%@", self.FirstName, self.LastName]; return fullName; }
+
+- prije metode koje postoje samo kad imamo instancu
++ prije metode koje postoje i kad nemamo instancu, statièka metoda (=C++) u kojoj možemo definisati parametre koji æe važiti za sve instance klase
+
+- .h:
+
+@interface Student : NSObject
+@property NSString *firstName;
+@property NSString *lastName;
+
+- šta je definisano ovdje, vidljivo je svugdje; metode sa + moraju biti definisane u .m fajlu
+
+- sve što sakrivamo implementiramo samo u .m bez pisanja deklaracije metode u .h
+
+
+weak - objective-C se brine o memoriji
+strong - mi sami dealociramo
+
+- razlika class i instance method ???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
