@@ -25,9 +25,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)collectionView1:(UICollectionView *)collectionView1 didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
-{
-    DetailViewController *viewController = [[DetailViewController alloc] init];
-    [self.navigationController ]
-}
+
 @end
