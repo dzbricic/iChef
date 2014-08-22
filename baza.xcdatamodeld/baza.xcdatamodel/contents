@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Jela" syncable="YES">
+        <attribute name="kategorija" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="naziv" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recept" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tip" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Jela" positionX="-36" positionY="9" width="128" height="30"/>
+    </elements>
+</model>

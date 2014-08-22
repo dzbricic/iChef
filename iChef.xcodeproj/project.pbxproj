@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182262E219A7AADB00A4AD7F /* baza.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 182262E019A7AADB00A4AD7F /* baza.xcdatamodeld */; };
 		761F948A19A639DC0075C733 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761F948919A639DC0075C733 /* Foundation.framework */; };
 		761F948C19A639DC0075C733 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761F948B19A639DC0075C733 /* CoreGraphics.framework */; };
 		761F948E19A639DC0075C733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761F948D19A639DC0075C733 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182262E119A7AADB00A4AD7F /* baza.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = baza.xcdatamodel; sourceTree = "<group>"; };
 		761F948619A639DC0075C733 /* iChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761F948919A639DC0075C733 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		761F948B19A639DC0075C733 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -85,6 +87,7 @@
 		761F947D19A639DC0075C733 = {
 			isa = PBXGroup;
 			children = (
+				182262E019A7AADB00A4AD7F /* baza.xcdatamodeld */,
 				761F948F19A639DC0075C733 /* iChef */,
 				761F94B119A639DC0075C733 /* iChefTests */,
 				761F948819A639DC0075C733 /* Frameworks */,
@@ -257,6 +260,7 @@
 				761F94A319A639DC0075C733 /* SecondViewController.m in Sources */,
 				761F949A19A639DC0075C733 /* AppDelegate.m in Sources */,
 				761F94A019A639DC0075C733 /* FirstViewController.m in Sources */,
+				182262E219A7AADB00A4AD7F /* baza.xcdatamodeld in Sources */,
 				761F949619A639DC0075C733 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +466,7 @@
 				761F94BD19A639DC0075C733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		761F94BE19A639DC0075C733 /* Build configuration list for PBXNativeTarget "iChefTests" */ = {
 			isa = XCConfigurationList;
@@ -470,8 +475,22 @@
 				761F94C019A639DC0075C733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		182262E019A7AADB00A4AD7F /* baza.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				182262E119A7AADB00A4AD7F /* baza.xcdatamodel */,
+			);
+			currentVersion = 182262E119A7AADB00A4AD7F /* baza.xcdatamodel */;
+			path = baza.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 761F947E19A639DC0075C733 /* Project object */;
 }
