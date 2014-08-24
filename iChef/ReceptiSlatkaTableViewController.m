@@ -58,17 +58,19 @@
     return _slatkiRecepti.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  
  static NSString *CellIdentifier = @"receptiSlatkiTable";
-ReceptiSlatkaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
+ ReceptiSlatkaTableViewCell *cell = [tableView
+ dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
+    if (cell == nil)
+    {
+        cell = [[ReceptiSlatkaTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
  
- long row = [indexPath row];
- 
+    long row = [indexPath row];
  cell.receptiSlatka.text = _slatkiRecepti[row];
     return cell;
 }
