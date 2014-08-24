@@ -7,26 +7,28 @@
 //
 
 #import "ReceptiSlatkaTableViewController.h"
+#import "ReceptiSlatkaTableViewCell.h"
 
 @interface ReceptiSlatkaTableViewController ()
+
 
 @end
 
 @implementation ReceptiSlatkaTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
+/*- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
     return self;
-}
+}*/
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    _slatkiRecepti = @[@"Palacinci"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,26 +48,30 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return _slatkiRecepti.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+ 
+ static NSString *CellIdentifier = @"receptiSlatkiTable";
+ReceptiSlatkaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+ 
+ long row = [indexPath row];
+ 
+ cell.receptiSlatka.text = _slatkiRecepti[row];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.

@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ReceptiSlatkaTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *receptiSlatka;
-
+@property (nonatomic, strong) IBOutlet UILabel *receptiSlatka;
 @end

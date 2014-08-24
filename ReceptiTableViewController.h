@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ReceptiTableViewController : UITableViewController
-
+@property  (nonatomic, strong) NSArray *slaniRecepti;
 @end

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ReceptiSlatkaTableViewController : UITableViewController
-@property (strong, nonatomic) IBOutlet UILabel *receptiSlatka;
+@property (nonatomic, strong) NSArray *slatkiRecepti;
 
 @end

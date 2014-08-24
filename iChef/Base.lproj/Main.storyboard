@@ -184,9 +184,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <string key="reuseIdentifier">receptiTableCell	</string>
+                                <string key="reuseIdentifier">receptiSlatkiTable	</string>
                                 <connections>
-                                    <outlet property="receptiSlatka" destination="ZYN-ZY-Mkm" id="TjV-Ix-BlI"/>
+                                    <outlet property="receptiSlatka" destination="ZYN-ZY-Mkm" id="qew-gq-0Cp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
