@@ -9,9 +9,7 @@
 #import "ReceptiTableViewController.h"
 #import "ReceptiTableViewCell.h"
 
-@interface ReceptiTableViewController (){
-       NSArray *slaniRecepti;
-}
+@interface ReceptiTableViewController ()
 
 @end
 
@@ -29,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _slaniRecepti = @[@"Sarma"];
+    _slaniRecepti = @[@"Sarma", @"Sarma2"];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -47,7 +45,7 @@
 
 #pragma mark - Table view data source
 
-/*- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+		- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
@@ -59,18 +57,28 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return _slaniRecepti.count;
-}*/
+}
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
+ static NSString *CellIdentifier = @"receptiTable";
+ ReceptiTableViewCell *cell = [tableView
+ dequeueReusableCellWithIdentifier:CellIdentifier];
+ // Configure the cell...
+ if (cell == nil)
+ {
+ cell = [[ReceptiTableViewCell alloc]
+         initWithStyle:UITableViewCellStyleSubtitle
+         reuseIdentifier:CellIdentifier];
+ }
+ 
+ long row = [indexPath row];
+ cell.receptiSlana.text = _slaniRecepti[row];
+ return cell;
+ 
+}   
+
 
 /*
 // Override to support conditional editing of the table view.

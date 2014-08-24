@@ -16,19 +16,19 @@
 
 @implementation ReceptiSlatkaTableViewController
 
-/*- (id)initWithStyle:(UITableViewStyle)style
+- (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
     }
     return self;
-}*/
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _slatkiRecepti = @[@"Palacinci"];
+    _slatkiRecepti = @[@"Palacinci",@"Palacinci s nutelom"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -71,7 +71,7 @@
     }
  
     long row = [indexPath row];
- cell.receptiSlatka.text = _slatkiRecepti[row];
+    cell.receptiSlatka.text = _slatkiRecepti[row];
     return cell;
 }
 
