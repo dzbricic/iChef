@@ -10,5 +10,7 @@
 
 @interface ReceptiTableViewCell :UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UILabel *receptSlana;
+
 
 @end
