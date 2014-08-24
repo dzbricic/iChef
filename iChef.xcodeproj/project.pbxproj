@@ -24,6 +24,8 @@
 		761F94AE19A639DC0075C733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761F948D19A639DC0075C733 /* UIKit.framework */; };
 		761F94B619A639DC0075C733 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 761F94B419A639DC0075C733 /* InfoPlist.strings */; };
 		761F94B819A639DC0075C733 /* iChefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761F94B719A639DC0075C733 /* iChefTests.m */; };
+		768EEE3619A9E50C002F90A7 /* ReceptiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3519A9E50C002F90A7 /* ReceptiTableViewController.m */; };
+		768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		761F94B319A639DC0075C733 /* iChefTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iChefTests-Info.plist"; sourceTree = "<group>"; };
 		761F94B519A639DC0075C733 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		761F94B719A639DC0075C733 /* iChefTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iChefTests.m; sourceTree = "<group>"; };
+		768EEE3419A9E50C002F90A7 /* ReceptiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceptiTableViewController.h; path = ../ReceptiTableViewController.h; sourceTree = "<group>"; };
+		768EEE3519A9E50C002F90A7 /* ReceptiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceptiTableViewController.m; path = ../ReceptiTableViewController.m; sourceTree = "<group>"; };
+		768EEE3719A9E559002F90A7 /* ReceptiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceptiTableViewCell.h; sourceTree = "<group>"; };
+		768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceptiTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +131,11 @@
 			children = (
 				761F949819A639DC0075C733 /* AppDelegate.h */,
 				761F949919A639DC0075C733 /* AppDelegate.m */,
+				768EEE3419A9E50C002F90A7 /* ReceptiTableViewController.h */,
+				768EEE3519A9E50C002F90A7 /* ReceptiTableViewController.m */,
 				761F949B19A639DC0075C733 /* Main.storyboard */,
+				768EEE3719A9E559002F90A7 /* ReceptiTableViewCell.h */,
+				768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */,
 				761F949E19A639DC0075C733 /* FirstViewController.h */,
 				761F949F19A639DC0075C733 /* FirstViewController.m */,
 				761F94A119A639DC0075C733 /* SecondViewController.h */,
@@ -262,6 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */,
+				768EEE3619A9E50C002F90A7 /* ReceptiTableViewController.m in Sources */,
 				761F94A319A639DC0075C733 /* SecondViewController.m in Sources */,
 				761F949A19A639DC0075C733 /* AppDelegate.m in Sources */,
 				761F94A019A639DC0075C733 /* FirstViewController.m in Sources */,
