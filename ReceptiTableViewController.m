@@ -69,7 +69,7 @@
  if (cell == nil)
  {
  cell = [[ReceptiTableViewCell alloc]
-         initWithStyle:UITableViewCellStyleSubtitle
+         initWithStyle:UITableViewCellStyleDefault
          reuseIdentifier:CellIdentifier];
  }
  
