@@ -67,11 +67,10 @@
     // Configure the cell...
     if (cell == nil)
     {
-        cell = [[ReceptiSlatkaTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[ReceptiSlatkaTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
- 
-    long row = [indexPath row];
-    cell.receptiSlatka.text = _slatkiRecepti[row];
+ cell.receptiSlatka.text = [_slatkiRecepti objectAtIndex:indexPath.row];    /*long row = [indexPath row];
+    cell.receptiSlatka.text = _slatkiRecepti[row];*/
     return cell;
 }
 

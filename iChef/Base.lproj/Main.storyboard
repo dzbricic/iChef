@@ -34,6 +34,7 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="5gt-Km-gCs" id="JlA-FS-6zS"/>
                             <outlet property="delegate" destination="5gt-Km-gCs" id="CXu-Hf-cr2"/>

@@ -73,8 +73,8 @@
          reuseIdentifier:CellIdentifier];
  }
  
- long row = [indexPath row];
- cell.receptiSlana.text = _slaniRecepti[row];
+// long row = [indexPath row];
+    cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];
  return cell;
  
 }   
