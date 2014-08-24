@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Recepti Table View Controller - Root View Controller-->
+        <!--Recepti Table View Controller - Slana jela-->
         <scene sceneID="3Ay-6f-F2x">
             <objects>
                 <tableViewController id="5gt-Km-gCs" customClass="ReceptiTableViewController" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             <outlet property="delegate" destination="5gt-Km-gCs" id="CXu-Hf-cr2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="FXp-A6-fX1">
+                    <navigationItem key="navigationItem" title="Slana jela" id="FXp-A6-fX1">
                         <barButtonItem key="leftBarButtonItem" title="Nazad" id="BW5-s1-B2S">
                             <connections>
                                 <segue destination="CZ4-MO-1fc" kind="modal" id="5tQ-L7-6qv"/>
@@ -160,7 +160,7 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
-        <!--Recepti Slatka Table View Controller - Root View Controller-->
+        <!--Recepti Slatka Table View Controller - Slatka jela-->
         <scene sceneID="zmX-ih-s6t">
             <objects>
                 <tableViewController id="ooZ-Iu-grr" customClass="ReceptiSlatkaTableViewController" sceneMemberID="viewController">
@@ -195,7 +195,7 @@
                             <outlet property="delegate" destination="ooZ-Iu-grr" id="fC9-yd-eA8"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="bQv-HQ-EdF">
+                    <navigationItem key="navigationItem" title="Slatka jela" id="bQv-HQ-EdF">
                         <barButtonItem key="leftBarButtonItem" title="Nazad" id="oDF-Y2-xEE">
                             <connections>
                                 <segue destination="QUy-BD-bpt" kind="modal" id="GmL-ki-r5a"/>
