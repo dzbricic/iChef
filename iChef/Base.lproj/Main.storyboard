@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Recepti Table View Controller - Slana jela-->
@@ -43,7 +43,7 @@
                     <navigationItem key="navigationItem" title="Slana jela" id="FXp-A6-fX1">
                         <barButtonItem key="leftBarButtonItem" title="Nazad" id="BW5-s1-B2S">
                             <connections>
-                                <segue destination="CZ4-MO-1fc" kind="modal" id="5tQ-L7-6qv"/>
+                                <segue destination="8YX-ce-x5E" kind="modal" id="3aW-0D-HUJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -200,7 +200,7 @@
                     <navigationItem key="navigationItem" title="Slatka jela" id="bQv-HQ-EdF">
                         <barButtonItem key="leftBarButtonItem" title="Nazad" id="oDF-Y2-xEE">
                             <connections>
-                                <segue destination="QUy-BD-bpt" kind="modal" id="GmL-ki-r5a"/>
+                                <segue destination="8YX-ce-x5E" kind="modal" id="2cF-TT-fBf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -257,9 +257,8 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="2cF-TT-fBf"/>
         <segue reference="wKi-xW-Iff"/>
-        <segue reference="GmL-ki-r5a"/>
         <segue reference="zhl-W8-Cb1"/>
-        <segue reference="5tQ-L7-6qv"/>
     </inferredMetricsTieBreakers>
 </document>

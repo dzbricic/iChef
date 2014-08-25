@@ -52,7 +52,7 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
@@ -60,7 +60,7 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  static NSString *CellIdentifier = @"receptiTable";
  ReceptiTableViewCell *cell = [tableView
@@ -77,7 +77,7 @@
     cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];
  return cell;
  
-}   
+} */
 
 
 /*
