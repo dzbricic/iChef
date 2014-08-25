@@ -28,6 +28,7 @@
 		768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */; };
 		768EEE3C19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */; };
 		768EEE3F19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */; };
+		CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceptiSlatkaTableViewController.m; sourceTree = "<group>"; };
 		768EEE3D19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceptiSlatkaTableViewCell.h; sourceTree = "<group>"; };
 		768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceptiSlatkaTableViewCell.m; sourceTree = "<group>"; };
+		CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slanaKategorijaCell.h; sourceTree = "<group>"; };
+		CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slanaKategorijaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */,
 				768EEE3A19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.h */,
 				768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */,
+				CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */,
+				CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */,
 				768EEE3719A9E559002F90A7 /* ReceptiTableViewCell.h */,
 				768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */,
 				768EEE3419A9E50C002F90A7 /* ReceptiTableViewController.h */,
@@ -283,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */,
+				CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */,
 				768EEE3C19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m in Sources */,
 				768EEE3619A9E50C002F90A7 /* ReceptiTableViewController.m in Sources */,
 				761F94A319A639DC0075C733 /* SecondViewController.m in Sources */,

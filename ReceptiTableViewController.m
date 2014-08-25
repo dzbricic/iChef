@@ -63,7 +63,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
- static NSString *CellIdentifier = @"receptiTable";
+ static NSString *CellIdentifier = @"slanaVeza";
     
     ReceptiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
@@ -75,12 +75,16 @@ if (cell == nil)
          reuseIdentifier:CellIdentifier];
  }
  
-    cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];
+    cell.text = [_slaniRecepti objectAtIndex:indexPath.row];
     //cell.slaneSlike.image = [UIImage imageNamed:_slaneSlike[row]];
     return cell;
  
 }
 
+-(void)posaljiKategoriju:(NSString *)string
+{
+    //pokupiti iz baze recepte koji imaju kategorija == string
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -13,4 +13,6 @@
 @property  (nonatomic, strong) NSArray *slaniRecepti;
 @property(nonatomic, strong)NSArray *slaneSlike;
 
+-(void)posaljiKategoriju:(NSString*) string;
+@property NSString* a;
 @end

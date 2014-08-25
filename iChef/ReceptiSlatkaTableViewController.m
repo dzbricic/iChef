@@ -61,7 +61,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  
- static NSString *CellIdentifier = @"receptiSlatkiTable";
+ static NSString *CellIdentifier = @"slatkaVeza";
  ReceptiSlatkaTableViewCell *cell = [tableView
  dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
