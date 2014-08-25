@@ -28,6 +28,8 @@
 {
     [super viewDidLoad];
     _slaniRecepti = @[@"Sarma", @"Sarma2"];
+    _slaniReceptiDetalji = @[@"S mesom", @"S mesom 2"];
+    _slaneSlike = @[@"first.jbg", @"second.jpg"];
     
     
     // Uncomment the following line to preserve selection between presentations.
@@ -63,10 +65,14 @@
 /*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  static NSString *CellIdentifier = @"receptiTable";
- ReceptiTableViewCell *cell = [tableView
- dequeueReusableCellWithIdentifier:CellIdentifier];
+ /*ReceptiTableViewCell *cell = [tableView
+ dequeueReusableCellWithIdentifier:CellIdentifier];*/
+    
+ReceptiTableViewCell *cell = [tableView
+                    dequeueReusableCellWithIdentifier:CellIdentifier
+                              forIndexPath:indexPath];
  // Configure the cell...
- if (cell == nil)
+/* if (cell == nil)
  {
  cell = [[ReceptiTableViewCell alloc]
          initWithStyle:UITableViewCellStyleDefault
@@ -74,8 +80,13 @@
  }
  
 // long row = [indexPath row];
-    cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];
- return cell;
+    cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];*/
+    
+    long row = [indexPath row];
+    cell.receptiSlana.text = _slaniRecepti[row];
+    cell.receptiSlanaDetalji.text = _slaniReceptiDetalji[row];
+    cell.slaneSlike.image = [UIImage imageNamed:_slaneSlike[row]];
+    return cell;
  
 } */
 

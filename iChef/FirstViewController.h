@@ -10,9 +10,6 @@
 
 @interface FirstViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UICollectionViewCell *jelo1;
-
-@property (strong, nonatomic) IBOutlet UICollectionView *collectionView1;
 
 -(void)collectionView1:(UICollectionView *)collectionView1 didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
 
