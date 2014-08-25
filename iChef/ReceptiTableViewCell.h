@@ -11,7 +11,6 @@
 @interface ReceptiTableViewCell :UITableViewCell
 
 @property (nonatomic, strong) IBOutlet UILabel *receptiSlana;
-@property (strong, nonatomic) IBOutlet UILabel *receptiSlanaDetalji;
 @property (strong, nonatomic) IBOutlet UIImageView *slaneSlike;
 
 

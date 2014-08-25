@@ -28,7 +28,6 @@
 {
     [super viewDidLoad];
     _slaniRecepti = @[@"Sarma", @"Sarma2"];
-    _slaniReceptiDetalji = @[@"S mesom", @"S mesom 2"];
     _slaneSlike = @[@"first.jbg", @"second.jpg"];
     
     
@@ -47,14 +46,14 @@
 
 #pragma mark - Table view data source
 
-		- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
-/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
@@ -62,33 +61,25 @@
 }
 
 
-/*- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  static NSString *CellIdentifier = @"receptiTable";
- /*ReceptiTableViewCell *cell = [tableView
- dequeueReusableCellWithIdentifier:CellIdentifier];*/
     
-ReceptiTableViewCell *cell = [tableView
-                    dequeueReusableCellWithIdentifier:CellIdentifier
-                              forIndexPath:indexPath];
- // Configure the cell...
-/* if (cell == nil)
+    ReceptiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+// Configure the cell...
+if (cell == nil)
  {
  cell = [[ReceptiTableViewCell alloc]
          initWithStyle:UITableViewCellStyleDefault
          reuseIdentifier:CellIdentifier];
  }
  
-// long row = [indexPath row];
-    cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];*/
-    
-    long row = [indexPath row];
-    cell.receptiSlana.text = _slaniRecepti[row];
-    cell.receptiSlanaDetalji.text = _slaniReceptiDetalji[row];
-    cell.slaneSlike.image = [UIImage imageNamed:_slaneSlike[row]];
+    cell.receptiSlana.text = [_slaniRecepti objectAtIndex:indexPath.row];
+    //cell.slaneSlike.image = [UIImage imageNamed:_slaneSlike[row]];
     return cell;
  
-} */
+}
 
 
 /*

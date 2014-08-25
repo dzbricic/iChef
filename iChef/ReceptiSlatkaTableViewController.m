@@ -69,7 +69,8 @@
     {
         cell = [[ReceptiSlatkaTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
- cell.receptiSlatka.text = [_slatkiRecepti objectAtIndex:indexPath.row];    /*long row = [indexPath row];
+    cell.text = [_slatkiRecepti objectAtIndex:indexPath.row];
+    /*long row = [indexPath row];
     cell.receptiSlatka.text = _slatkiRecepti[row];*/
     return cell;
 }

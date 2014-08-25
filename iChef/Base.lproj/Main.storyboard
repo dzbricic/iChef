@@ -21,7 +21,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xz-B3-6EF">
-                                            <rect key="frame" x="84" y="-10" width="42" height="32"/>
+                                            <rect key="frame" x="84" y="0.0" width="42" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
@@ -30,18 +30,11 @@
                                             <rect key="frame" x="2" y="1" width="74" height="42"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t77-3f-P7d">
-                                            <rect key="frame" x="84" y="20" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="receptSlana" destination="5xz-B3-6EF" id="yFJ-h0-yeN"/>
                                     <outlet property="receptiSlana" destination="5xz-B3-6EF" id="I0v-Lj-ayN"/>
-                                    <outlet property="receptiSlanaDetalji" destination="t77-3f-P7d" id="y3q-1R-Ocb"/>
                                     <outlet property="slaneSlike" destination="HYr-cd-ccj" id="BjZ-Ai-4Wl"/>
                                 </connections>
                             </tableViewCell>
@@ -211,19 +204,8 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ViT-IS-cwy" id="PE6-6n-D1p">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYN-ZY-Mkm">
-                                            <rect key="frame" x="55" y="-1" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <string key="reuseIdentifier">receptiSlatkiTable	</string>
-                                <connections>
-                                    <outlet property="receptiSlatka" destination="ZYN-ZY-Mkm" id="sgT-GD-exI"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
