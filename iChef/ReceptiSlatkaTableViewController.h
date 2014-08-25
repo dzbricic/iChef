@@ -11,4 +11,6 @@
 @interface ReceptiSlatkaTableViewController : UITableViewController
 @property (nonatomic, strong) NSArray *slatkiRecepti;
 
+
+
 @end

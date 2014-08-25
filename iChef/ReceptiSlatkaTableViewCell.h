@@ -10,4 +10,5 @@
 
 @interface ReceptiSlatkaTableViewCell : UITableViewCell
 @property (nonatomic, strong) IBOutlet UILabel *receptiSlatka;
+
 @end

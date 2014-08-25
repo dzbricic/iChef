@@ -10,4 +10,8 @@
 
 @interface ReceptiTableViewController : UITableViewController
 @property  (nonatomic, strong) NSArray *slaniRecepti;
+
+@property(nonatomic, strong) NSArray *slaniReceptiDetalji;
+@property(nonatomic, strong)NSArray *slaneSlike;
+
 @end
