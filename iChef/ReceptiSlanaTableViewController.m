@@ -9,7 +9,8 @@
 #import "ReceptiSlanaTableViewController.h"
 #import "ReceptiTableViewCell.h"
 
-@interface ReceptiSlanaTableViewController ()
+@interface ReceptiSlanaTableViewController()
+
 
 @end
 
@@ -44,32 +45,34 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return _slaniRecepti.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"slanaCelijaPrvi";
+    static NSString *CellIdentifier = @"receptPrvi";
+    
     ReceptiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.text = [_slaniRecepti objectAtIndexPath:indexPath.row];
+    //cell.text = [_slaniRecepti objectAtIndexPath:indexPath.row];
+    long row = [indexPath row];
+    cell.textLabel.text = _slaniRecepti[row];
     return cell;
 }
 
--(void)posaljiKategoriju:(NSString*) nazivKategorije
+-(void)posaljiKategoriju:(NSString*)nazivKategorije
 {
+    //[self viewDidLoad];
     
 }
 /*

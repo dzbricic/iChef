@@ -11,10 +11,8 @@
 @interface FirstViewController : UIViewController
 <UITableViewDelegate, UITableViewDataSource>
 
--(void)collectionView1:(UICollectionView *)collectionView1 didSelectItemAtIndexPath:(NSIndexPath *)indexPath;
 
-
-@property (weak, nonatomic) IBOutlet UITableView *slanaKategorije;
+@property (nonatomic, strong) IBOutlet UITableView *slanaKategorije;
 
 @property NSArray *kategorijeNiz;
 

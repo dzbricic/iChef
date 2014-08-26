@@ -12,8 +12,10 @@
 
 int main(int argc, char * argv[])
 {
+    //[ReceptiSlanaTableViewController _keepAtLinkTime];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
+    
 }
 

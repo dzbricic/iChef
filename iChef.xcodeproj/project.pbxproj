@@ -27,6 +27,7 @@
 		768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */; };
 		768EEE3C19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */; };
 		768EEE3F19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */; };
+		CD91FC5F19ACE8B800969183 /* ReceptiSlanaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91FC5E19ACAE5B00969183 /* ReceptiSlanaTableViewController.m */; };
 		CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */; };
 /* End PBXBuildFile section */
 
@@ -296,6 +297,7 @@
 				761F949619A639DC0075C733 /* main.m in Sources */,
 				768EEE3F19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m in Sources */,
 				182262E519A7AF8500A4AD7F /* jelo.m in Sources */,
+				CD91FC5F19ACE8B800969183 /* ReceptiSlanaTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
