@@ -8,6 +8,7 @@
 
 #import "ReceptiSlanaTableViewController.h"
 #import "ReceptiTableViewCell.h"
+#import "slanaDetalji.h"
 
 @interface ReceptiSlanaTableViewController()
 
@@ -28,13 +29,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _slaniRecepti = @[@"Sarma",@"Sarma2"];
+    if(self.nazivKategorije == @"sarmica")
+        _slaniRecepti = @[@"Sarma",@"Sarma2"];
+    else
+        _slaniRecepti = @[@"burek",@"burek2"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,9 +77,24 @@
 
 -(void)posaljiKategoriju:(NSString*)nazivKategorije
 {
-    //[self viewDidLoad];
+    self.nazivKategorije = nazivKategorije;
     
 }
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"posaljiNaziv"])
+    {
+        NSIndexPath *indeks = [self.tableView indexPathForSelectedRow];
+        NSString *string = [_slaniRecepti objectAtIndex:indeks.row];
+        // ReceptiSlanaTableViewController *slanaJelaTable =
+        //[segue destinationViewController];
+        
+        [[segue destinationViewController] posaljiNaziv:string];
+        
+    }
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

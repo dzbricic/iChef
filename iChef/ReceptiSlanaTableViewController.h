@@ -1,15 +1,9 @@
 //
-
 //  ReceptiSlanaTableViewController.h
-
 //  iChef
-
 //
-
 //  Created by merimaH on 8/26/14.
-
 //  Copyright (c) 2014 dzm. All rights reserved.
-
 //
 
 
@@ -26,11 +20,10 @@
 
 @property(nonatomic, strong) NSArray *slaneSlike;
 
+@property(nonatomic, strong) NSString *nazivKategorije;
 
 
 -(void)posaljiKategoriju:(NSString*)nazivKategorije;
-
-//+(void)_keepAtLinkTime;
 
 
 

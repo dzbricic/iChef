@@ -21,7 +21,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _kategorijeNiz = @[@"sarmica"];
+    _kategorijeNiz = @[@"sarmica", @"burek"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,9 +73,9 @@
         NSIndexPath *indeks = [self.slanaKategorije indexPathForSelectedRow];
         NSString *string = [_kategorijeNiz objectAtIndex:indeks.row];
        // ReceptiSlanaTableViewController *slanaJelaTable =
-        [segue destinationViewController];
+        //[segue destinationViewController];
         
-        //[[segue destinationViewController] posaljiKategoriju:string];
+        [[segue destinationViewController] posaljiKategoriju:string];
         
     }
 }
