@@ -7,7 +7,7 @@
 //
 
 #import "FirstViewController.h"
-#import "ReceptiTableViewController.h"
+#import "ReceptiSlanaTableViewController.h"
 #import "slanaKategorijaCell.h"
 
 @interface FirstViewController ()
@@ -48,19 +48,31 @@
 
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"slanaVeza";
-    slanaKategorijaCell *cell = [tableView
-                                        dequeueReusableCellWithIdentifier:CellIdentifier];
-    // Configure the cell...
+    slanaKategorijaCell *cell = [tableView dequeueReusableCellWithIdentifier:@"slanaCelijaPrvi" forIndexPath:indexPath];
+    //[self configureCell:cell atIndexPath:indexPath];
+    //return cell;
+    
+    
     if (cell == nil)
     {
-        cell = [[slanaKategorijaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[slanaKategorijaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"slanaCelijaPrvi"];
     }
-    cell.text = [_kategorijeNiz objectAtIndex:indexPath.row];
-    /*long row = [indexPath row];
-     cell.receptiSlatka.text = _slatkiRecepti[row];*/
+    
+    cell.textLabel.text = [_kategorijeNiz objectAtIndex:indexPath.row];
     return cell;
 }
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+
+/*if ([[segue identifier] isEqualToString:@"showDetail"]) {
+ NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+ NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+ [[segue destinationViewController] setDetailItem:object];
+ }*/
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -68,13 +80,8 @@
             {
                 NSIndexPath *indeks = [self.slanaKategorije indexPathForSelectedRow];
                 NSString *string = [_kategorijeNiz objectAtIndex:indeks.row];
-                ReceptiTableViewController *slanaJelaTable = (ReceptiTableViewController*)[segue destinationViewController];
-
-                //∫slanaJelaTable;
-                //[slanaJelaTable posaljiK];
-                //NSIndexPath *slaniIndexPath = [self.tableView indexPathForSelectedRow];
-                
-            
+                //ReceptiTableViewController *slanaJelaTable = (ReceptiTableViewController*)[segue destinationViewController];
+                [[segue destinationViewController] posaljiKategoriju:string];
                 
         }
 }

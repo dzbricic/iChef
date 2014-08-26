@@ -1,19 +1,19 @@
 //
-//  ReceptiTableViewController.m
+//  ReceptiSlanaTableViewController.m
 //  iChef
 //
-//  Created by user24011 on 8/24/14.
+//  Created by merimaH on 8/26/14.
 //  Copyright (c) 2014 dzm. All rights reserved.
 //
 
-#import "ReceptiTableViewController.h"
+#import "ReceptiSlanaTableViewController.h"
 #import "ReceptiTableViewCell.h"
 
-@interface ReceptiTableViewController ()
+@interface ReceptiSlanaTableViewController ()
 
 @end
 
-@implementation ReceptiTableViewController
+@implementation ReceptiSlanaTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,13 +27,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _slaniRecepti = @[@"Sarma", @"Sarma2"];
-    _slaneSlike = @[@"first.jbg", @"second.jpg"];
-    
-    
+    _slaniRecepti = @[@"Sarma",@"Sarma2"];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+ 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -60,32 +58,20 @@
     return _slaniRecepti.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
- static NSString *CellIdentifier = @"slanaVeza";
+    static NSString *CellIdentifier = @"slanaCelijaPrvi";
+    ReceptiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    ReceptiTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-
-// Configure the cell...
-if (cell == nil)
- {
- cell = [[ReceptiTableViewCell alloc]
-         initWithStyle:UITableViewCellStyleDefault
-         reuseIdentifier:CellIdentifier];
- }
- 
-    cell.text = [_slaniRecepti objectAtIndex:indexPath.row];
-    //cell.slaneSlike.image = [UIImage imageNamed:_slaneSlike[row]];
+    // Configure the cell...
+    cell.text = [_slaniRecepti objectAtIndexPath:indexPath.row];
     return cell;
- 
 }
 
--(void)posaljiKategoriju:(NSString *)string
+-(void)posaljiKategoriju:(NSString*) nazivKategorije
 {
-    //pokupiti iz baze recepte koji imaju kategorija == string
+    
 }
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,7 +88,8 @@ if (cell == nil)
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+    }   
+    else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
@@ -127,12 +114,13 @@ if (cell == nil)
 /*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+// In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
+ */
 
 @end

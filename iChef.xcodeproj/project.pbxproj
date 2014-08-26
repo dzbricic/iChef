@@ -24,7 +24,6 @@
 		761F94AE19A639DC0075C733 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761F948D19A639DC0075C733 /* UIKit.framework */; };
 		761F94B619A639DC0075C733 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 761F94B419A639DC0075C733 /* InfoPlist.strings */; };
 		761F94B819A639DC0075C733 /* iChefTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 761F94B719A639DC0075C733 /* iChefTests.m */; };
-		768EEE3619A9E50C002F90A7 /* ReceptiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3519A9E50C002F90A7 /* ReceptiTableViewController.m */; };
 		768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */; };
 		768EEE3C19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */; };
 		768EEE3F19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */; };
@@ -66,14 +65,14 @@
 		761F94B319A639DC0075C733 /* iChefTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iChefTests-Info.plist"; sourceTree = "<group>"; };
 		761F94B519A639DC0075C733 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		761F94B719A639DC0075C733 /* iChefTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iChefTests.m; sourceTree = "<group>"; };
-		768EEE3419A9E50C002F90A7 /* ReceptiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceptiTableViewController.h; path = ../ReceptiTableViewController.h; sourceTree = "<group>"; };
-		768EEE3519A9E50C002F90A7 /* ReceptiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceptiTableViewController.m; path = ../ReceptiTableViewController.m; sourceTree = "<group>"; };
 		768EEE3719A9E559002F90A7 /* ReceptiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceptiTableViewCell.h; sourceTree = "<group>"; };
 		768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceptiTableViewCell.m; sourceTree = "<group>"; };
 		768EEE3A19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceptiSlatkaTableViewController.h; sourceTree = "<group>"; };
 		768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceptiSlatkaTableViewController.m; sourceTree = "<group>"; };
 		768EEE3D19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceptiSlatkaTableViewCell.h; sourceTree = "<group>"; };
 		768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceptiSlatkaTableViewCell.m; sourceTree = "<group>"; };
+		CD91FC5D19ACAE5B00969183 /* ReceptiSlanaTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceptiSlanaTableViewController.h; sourceTree = "<group>"; };
+		CD91FC5E19ACAE5B00969183 /* ReceptiSlanaTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceptiSlanaTableViewController.m; sourceTree = "<group>"; };
 		CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slanaKategorijaCell.h; sourceTree = "<group>"; };
 		CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slanaKategorijaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,14 +142,14 @@
 				761F949B19A639DC0075C733 /* Main.storyboard */,
 				768EEE3D19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.h */,
 				768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */,
+				CD91FC5D19ACAE5B00969183 /* ReceptiSlanaTableViewController.h */,
+				CD91FC5E19ACAE5B00969183 /* ReceptiSlanaTableViewController.m */,
 				768EEE3A19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.h */,
 				768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */,
 				CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */,
 				CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */,
 				768EEE3719A9E559002F90A7 /* ReceptiTableViewCell.h */,
 				768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */,
-				768EEE3419A9E50C002F90A7 /* ReceptiTableViewController.h */,
-				768EEE3519A9E50C002F90A7 /* ReceptiTableViewController.m */,
 				761F949E19A639DC0075C733 /* FirstViewController.h */,
 				761F949F19A639DC0075C733 /* FirstViewController.m */,
 				761F94A119A639DC0075C733 /* SecondViewController.h */,
@@ -290,7 +289,6 @@
 				768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */,
 				CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */,
 				768EEE3C19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m in Sources */,
-				768EEE3619A9E50C002F90A7 /* ReceptiTableViewController.m in Sources */,
 				761F94A319A639DC0075C733 /* SecondViewController.m in Sources */,
 				761F949A19A639DC0075C733 /* AppDelegate.m in Sources */,
 				761F94A019A639DC0075C733 /* FirstViewController.m in Sources */,
