@@ -22,8 +22,6 @@
     }
     return self;
 }
-- (IBAction)rfjnfef:(id)sender {
-}
 
 - (void)viewDidLoad
 {
@@ -32,6 +30,8 @@
     self.nazivJela.text = self.nazivRecepta;
     self.recept.text = @"Prokuhaj lišće grožđa. Umiješaj meso i rižu i začine. Zamotaj komadiće smjese u lišće. Skuhaj i napravi pred kraj crvenu zapršku i etooo.";
     self.slikaJela.image = [UIImage imageNamed:@"first.jpg"];
+    self.navigationController.navigationBarHidden = false;
+
 }
 
 - (void)didReceiveMemoryWarning

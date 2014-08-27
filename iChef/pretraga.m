@@ -13,6 +13,7 @@
 @interface pretraga ()
 
 @property(nonatomic, strong) NSMutableArray *nizRezultata;
+
 @end
 
 @implementation pretraga
@@ -26,13 +27,23 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = true;
+
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _nizJela = @[@"Sarma",@"Sarma2", @"zeljanica"];
+    self.nizJela = @[@"Sarma",@"Sarma2", @"zeljanica"];
     self.nizRezultata = [NSMutableArray arrayWithCapacity:[self.nizJela count]];
+    
+    self.navigationController.navigationBarHidden = true;
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -49,31 +60,38 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    if(self.pretragaTabela == self.searchDisplayController.searchResultsTableView)
-        {
-            return [self.nizRezultata count];
-        }
-    else return [self.nizJela count];
-
+    //if(self.pretragaTabela == self.searchDisplayController.searchResultsTableView)
+    if (tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        return [self.nizRezultata count];
+    }
+    else
+    {
+        return [self.nizJela count];
+    }
+    
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"celijaPretraga";
-    UITableViewCell *cell = [self.pretragaTabela dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     //pretragaCell *cell = [self.pretragaTabela dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if (cell == nil)
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    if(self.pretragaTabela == self.searchDisplayController.searchResultsTableView)
+    //if(self.pretragaTabela == self.searchDisplayController.searchResultsTableView)
+    if(tableView == self.searchDisplayController.searchResultsTableView)
     {
         cell.textLabel.text = [self.nizRezultata objectAtIndex:indexPath.row];
     }
     else
     // Configure the cell...
-    cell.textLabel.text = [self.nizJela objectAtIndex:indexPath.row];
+    {
+        cell.textLabel.text = [self.nizJela objectAtIndex:indexPath.row];
+    }
     
     return cell;
     
@@ -97,14 +115,17 @@
 - (void)filterContentForSearchText : (NSString*)searchText scope:(NSString*)scope
 {
     [self.nizRezultata removeAllObjects];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@", searchText];
-    self.nizRezultata = [NSMutableArray arrayWithArray: [self.nizJela filteredArrayUsingPredicate:predicate]];
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", searchText];
+    
+    self.nizRezultata = [NSMutableArray arrayWithArray: [self.nizJela filteredArrayUsingPredicate:resultPredicate]];
 }
+
 
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    
     return YES;
 }
 @end
