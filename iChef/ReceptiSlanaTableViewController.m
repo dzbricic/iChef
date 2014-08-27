@@ -29,8 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if(self.nazivKategorije == @"sarmica")
-        _slaniRecepti = @[@"Sarma",@"Sarma2"];
+    if([self.nazivKategorije isEqualToString:@"sarmica"])
+        _slaniRecepti = @[@"first",@"Lagana sarma"];
     else
         _slaniRecepti = @[@"burek",@"burek2"];
 

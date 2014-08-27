@@ -26,9 +26,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    //upisuje naziv recepta na osnovu poslanog podatka
     self.slatkaNaziv.text = self.nazivRecepta;
-    self.slatkaSlika.image = [UIImage imageNamed:@"second.jpg"];
+    
+    //odabire sliku na osnovu naziva recepta
+    NSMutableString *naziv = [[NSMutableString  alloc] init];
+    [naziv appendString:self.nazivRecepta];
+    [naziv appendString:@".jpg"];
+    self.slatkaSlika.image = [UIImage imageNamed:naziv];
+    
+    //treba dodati iščitavanje recepta iz baze na osnovu imena
 }
 
 - (void)didReceiveMemoryWarning

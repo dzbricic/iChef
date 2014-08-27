@@ -33,12 +33,11 @@
 
 }
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.nizJela = @[@"Sarma",@"Sarma2", @"zeljanica"];
+    self.nizJela = @[@"Lagana sarma",@"Sarma2", @"zeljanica"];
     self.nizRezultata = [NSMutableArray arrayWithCapacity:[self.nizJela count]];
     
     self.navigationController.navigationBarHidden = true;
