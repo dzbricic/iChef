@@ -20,5 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nazivJela;
 
 @property (weak, nonatomic) IBOutlet UITextView *recept;
+
 -(void)posaljiNaziv:(NSString*)nazivRecepta;
+
 @end

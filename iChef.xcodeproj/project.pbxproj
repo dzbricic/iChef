@@ -29,6 +29,10 @@
 		768EEE3F19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 768EEE3E19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m */; };
 		CD91FC5F19ACE8B800969183 /* ReceptiSlanaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91FC5E19ACAE5B00969183 /* ReceptiSlanaTableViewController.m */; };
 		CD91FC6219ACEE2100969183 /* slanaDetalji.m in Sources */ = {isa = PBXBuildFile; fileRef = CD91FC6119ACEE2100969183 /* slanaDetalji.m */; };
+		CD94C47B19ADF09200B948DA /* slatkaKategorijaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C47A19ADF09200B948DA /* slatkaKategorijaCell.m */; };
+		CD94C47E19AE043400B948DA /* slatkaDetalji.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C47D19AE043400B948DA /* slatkaDetalji.m */; };
+		CD94C48119AE0EF200B948DA /* pretraga.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C48019AE0EF200B948DA /* pretraga.m */; };
+		CD94C48419AE110000B948DA /* pretragaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C48319AE110000B948DA /* pretragaCell.m */; };
 		CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +81,14 @@
 		CD91FC5E19ACAE5B00969183 /* ReceptiSlanaTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceptiSlanaTableViewController.m; sourceTree = "<group>"; };
 		CD91FC6019ACEE2100969183 /* slanaDetalji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slanaDetalji.h; sourceTree = "<group>"; };
 		CD91FC6119ACEE2100969183 /* slanaDetalji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slanaDetalji.m; sourceTree = "<group>"; };
+		CD94C47919ADF09200B948DA /* slatkaKategorijaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slatkaKategorijaCell.h; sourceTree = "<group>"; };
+		CD94C47A19ADF09200B948DA /* slatkaKategorijaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slatkaKategorijaCell.m; sourceTree = "<group>"; };
+		CD94C47C19AE043400B948DA /* slatkaDetalji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slatkaDetalji.h; sourceTree = "<group>"; };
+		CD94C47D19AE043400B948DA /* slatkaDetalji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slatkaDetalji.m; sourceTree = "<group>"; };
+		CD94C47F19AE0EF200B948DA /* pretraga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pretraga.h; sourceTree = "<group>"; };
+		CD94C48019AE0EF200B948DA /* pretraga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pretraga.m; sourceTree = "<group>"; };
+		CD94C48219AE110000B948DA /* pretragaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pretragaCell.h; sourceTree = "<group>"; };
+		CD94C48319AE110000B948DA /* pretragaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pretragaCell.m; sourceTree = "<group>"; };
 		CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slanaKategorijaCell.h; sourceTree = "<group>"; };
 		CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slanaKategorijaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +164,8 @@
 				768EEE3B19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m */,
 				CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */,
 				CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */,
+				CD94C47919ADF09200B948DA /* slatkaKategorijaCell.h */,
+				CD94C47A19ADF09200B948DA /* slatkaKategorijaCell.m */,
 				768EEE3719A9E559002F90A7 /* ReceptiTableViewCell.h */,
 				768EEE3819A9E559002F90A7 /* ReceptiTableViewCell.m */,
 				761F949E19A639DC0075C733 /* FirstViewController.h */,
@@ -162,6 +176,12 @@
 				761F949019A639DC0075C733 /* Supporting Files */,
 				CD91FC6019ACEE2100969183 /* slanaDetalji.h */,
 				CD91FC6119ACEE2100969183 /* slanaDetalji.m */,
+				CD94C47C19AE043400B948DA /* slatkaDetalji.h */,
+				CD94C47D19AE043400B948DA /* slatkaDetalji.m */,
+				CD94C47F19AE0EF200B948DA /* pretraga.h */,
+				CD94C48019AE0EF200B948DA /* pretraga.m */,
+				CD94C48219AE110000B948DA /* pretragaCell.h */,
+				CD94C48319AE110000B948DA /* pretragaCell.m */,
 			);
 			path = iChef;
 			sourceTree = "<group>";
@@ -295,8 +315,11 @@
 				768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */,
 				CD91FC6219ACEE2100969183 /* slanaDetalji.m in Sources */,
 				CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */,
+				CD94C47B19ADF09200B948DA /* slatkaKategorijaCell.m in Sources */,
+				CD94C47E19AE043400B948DA /* slatkaDetalji.m in Sources */,
 				768EEE3C19A9EF8D002F90A7 /* ReceptiSlatkaTableViewController.m in Sources */,
 				761F94A319A639DC0075C733 /* SecondViewController.m in Sources */,
+				CD94C48119AE0EF200B948DA /* pretraga.m in Sources */,
 				761F949A19A639DC0075C733 /* AppDelegate.m in Sources */,
 				761F94A019A639DC0075C733 /* FirstViewController.m in Sources */,
 				182262E219A7AADB00A4AD7F /* baza.xcdatamodeld in Sources */,
@@ -304,6 +327,7 @@
 				768EEE3F19A9EFD7002F90A7 /* ReceptiSlatkaTableViewCell.m in Sources */,
 				182262E519A7AF8500A4AD7F /* jelo.m in Sources */,
 				CD91FC5F19ACE8B800969183 /* ReceptiSlanaTableViewController.m in Sources */,
+				CD94C48419AE110000B948DA /* pretragaCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

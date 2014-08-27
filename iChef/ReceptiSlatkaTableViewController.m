@@ -8,6 +8,7 @@
 
 #import "ReceptiSlatkaTableViewController.h"
 #import "ReceptiSlatkaTableViewCell.h"
+#import "slatkaDetalji.h"
 
 @interface ReceptiSlatkaTableViewController ()
 
@@ -28,7 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _slatkiRecepti = @[@"Palacinci",@"Palacinci s nutelom"];
+    if([self.nazivKategorije isEqualToString:@"palacinci"])
+        _slatkiRecepti = @[@"Palacinci",@"Palacinci s nutelom"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,14 +48,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return _slatkiRecepti.count;
 }
@@ -61,7 +61,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
  
- static NSString *CellIdentifier = @"slatkaVeza";
+ static NSString *CellIdentifier = @"receptDrugi";
  ReceptiSlatkaTableViewCell *cell = [tableView
  dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
@@ -69,10 +69,30 @@
     {
         cell = [[ReceptiSlatkaTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.text = [_slatkiRecepti objectAtIndex:indexPath.row];
+    cell.textLabel.text = [_slatkiRecepti objectAtIndex:indexPath.row];
     /*long row = [indexPath row];
     cell.receptiSlatka.text = _slatkiRecepti[row];*/
     return cell;
+}
+
+-(void)posaljiKategoriju:(NSString*)nazivKategorije
+{
+    self.nazivKategorije = nazivKategorije;
+    
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"posaljiNaziv"])
+    {
+        NSIndexPath *indeks = [self.tableView indexPathForSelectedRow];
+        NSString *string = [_slatkiRecepti objectAtIndex:indeks.row];
+        // ReceptiSlanaTableViewController *slanaJelaTable =
+        //[segue destinationViewController];
+        
+        [[segue destinationViewController] posaljiNaziv:string];
+        
+    }
 }
 
 /*

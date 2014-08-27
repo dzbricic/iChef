@@ -1,18 +1,18 @@
 //
-//  slanaDetalji.m
+//  slatkaDetaljiViewController.m
 //  iChef
 //
-//  Created by merimaH on 8/26/14.
+//  Created by merimaH on 8/27/14.
 //  Copyright (c) 2014 dzm. All rights reserved.
 //
 
-#import "slanaDetalji.h"
+#import "slatkaDetalji.h"
 
-@interface slanaDetalji ()
+@interface slatkaDetalji ()
 
 @end
 
-@implementation slanaDetalji
+@implementation slatkaDetalji
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,16 +22,13 @@
     }
     return self;
 }
-- (IBAction)rfjnfef:(id)sender {
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.nazivJela.text = self.nazivRecepta;
-    self.recept.text = @"Prokuhaj lišće grožđa. Umiješaj meso i rižu i začine. Zamotaj komadiće smjese u lišće. Skuhaj i napravi pred kraj crvenu zapršku i etooo.";
-    self.slikaJela.image = [UIImage imageNamed:@"first.jpg"];
+    self.slatkaNaziv.text = self.nazivRecepta;
+    self.slatkaSlika.image = [UIImage imageNamed:@"second.jpg"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,4 +41,5 @@
 {
     self.nazivRecepta = nazivRecepta;
 }
+
 @end

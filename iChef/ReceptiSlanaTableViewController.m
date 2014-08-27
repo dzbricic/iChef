@@ -78,7 +78,6 @@
 -(void)posaljiKategoriju:(NSString*)nazivKategorije
 {
     self.nazivKategorije = nazivKategorije;
-    
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

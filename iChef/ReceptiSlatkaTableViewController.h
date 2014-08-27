@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ReceptiSlatkaTableViewController : UITableViewController
+
 @property (nonatomic, strong) NSArray *slatkiRecepti;
 
+-(void)posaljiKategoriju:(NSString*)nazivKategorije;
 
+
+@property(nonatomic, strong) NSString *nazivKategorije;
 
 @end
