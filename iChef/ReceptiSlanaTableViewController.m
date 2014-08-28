@@ -30,8 +30,13 @@
 {
     [super viewDidLoad];
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*if([self.nazivKategorije isEqualToString:@"sarmica"])
         _slaniRecepti = @[@"first",@"Lagana sarma"];
+=======
+    if(self.nazivKategorije == @"sarmica")
+        _slaniRecepti = @[@"Sarma",@"Sarma2"];
+>>>>>>> parent of 6c59b39... ostalo : provjeriti je li radi ovako insert i fetch za kupljenje i ubacivanje gdje već treba :D metode za popunjavanje detalja su ok , samo recept treba iščitati :D
 =======
     if(self.nazivKategorije == @"sarmica")
         _slaniRecepti = @[@"Sarma",@"Sarma2"];
