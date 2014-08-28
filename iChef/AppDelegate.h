@@ -10,17 +10,9 @@
 #import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-
-    NSManagedObjectModel *managedObjectModel;
- 
-    NSManagedObjectContext *managedObjectContext;
- 
-    NSPersistentStoreCoordinator *persistentStoreCoordinator;
-    
-}
 
 @property (strong, nonatomic) UIWindow *window;
+<<<<<<< HEAD
 
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
@@ -28,5 +20,7 @@
 
 - (NSString *)applicationDocumentsDirectory;
 
+=======
+>>>>>>> parent of 6c59b39... ostalo : provjeriti je li radi ovako insert i fetch za kupljenje i ubacivanje gdje već treba :D metode za popunjavanje detalja su ok , samo recept treba iščitati :D
 
 @end

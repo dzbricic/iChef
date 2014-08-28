@@ -26,18 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    //upisuje naziv recepta na osnovu poslanog podatka
+	// Do any additional setup after loading the view.
     self.nazivJela.text = self.nazivRecepta;
-    
-    //odabire sliku na osnovu naziva recepta
-    NSMutableString *naziv = [[NSMutableString  alloc] init];
-    [naziv appendString:self.nazivRecepta];
-    [naziv appendString:@".jpg"];
-    self.slikaJela.image = [UIImage imageNamed:naziv];
-    
-    //treba dodati iščitavanje recepta iz baze na osnovu imena
-    
+    self.recept.text = @"Prokuhaj lišće grožđa. Umiješaj meso i rižu i začine. Zamotaj komadiće smjese u lišće. Skuhaj i napravi pred kraj crvenu zapršku i etooo.";
+    self.slikaJela.image = [UIImage imageNamed:@"first.jpg"];
     self.navigationController.navigationBarHidden = false;
 
 }

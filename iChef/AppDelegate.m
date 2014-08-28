@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+<<<<<<< HEAD
 #import "Jela.h"
 #import "FirstViewController.h"
 #import "SecondViewController.h"
@@ -140,6 +141,14 @@
     
 
     
+=======
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+>>>>>>> parent of 6c59b39... ostalo : provjeriti je li radi ovako insert i fetch za kupljenje i ubacivanje gdje već treba :D metode za popunjavanje detalja su ok , samo recept treba iščitati :D
     return YES;
 }
 							
@@ -169,6 +178,5 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
- 
- @end
 
+@end

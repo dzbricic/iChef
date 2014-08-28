@@ -22,15 +22,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iChef/pretraga.m"
+<<<<<<< HEAD
             timestampString = "430912574.684079"
+=======
+            timestampString = "430861743.643988"
+>>>>>>> parent of 6c59b39... ostalo : provjeriti je li radi ovako insert i fetch za kupljenje i ubacivanje gdje već treba :D metode za popunjavanje detalja su ok , samo recept treba iščitati :D
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
+<<<<<<< HEAD
             landmarkName = "@implementation pretraga"
             landmarkType = "3">
          </BreakpointContent>
@@ -83,5 +88,11 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+=======
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+>>>>>>> parent of 6c59b39... ostalo : provjeriti je li radi ovako insert i fetch za kupljenje i ubacivanje gdje već treba :D metode za popunjavanje detalja su ok , samo recept treba iščitati :D
    </Breakpoints>
 </Bucket>

@@ -33,9 +33,6 @@
 		CD94C47E19AE043400B948DA /* slatkaDetalji.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C47D19AE043400B948DA /* slatkaDetalji.m */; };
 		CD94C48119AE0EF200B948DA /* pretraga.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C48019AE0EF200B948DA /* pretraga.m */; };
 		CD94C48419AE110000B948DA /* pretragaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C48319AE110000B948DA /* pretragaCell.m */; };
-		CD94C48719AE71E100B948DA /* Jela.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94C48619AE71E100B948DA /* Jela.m */; };
-		CD94C48919AE760100B948DA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD94C48819AE760100B948DA /* CoreData.framework */; };
-		CD94C48A19AE767D00B948DA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD94C48819AE760100B948DA /* CoreData.framework */; };
 		CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */; };
 /* End PBXBuildFile section */
 
@@ -92,9 +89,6 @@
 		CD94C48019AE0EF200B948DA /* pretraga.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pretraga.m; sourceTree = "<group>"; };
 		CD94C48219AE110000B948DA /* pretragaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pretragaCell.h; sourceTree = "<group>"; };
 		CD94C48319AE110000B948DA /* pretragaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pretragaCell.m; sourceTree = "<group>"; };
-		CD94C48519AE71E100B948DA /* Jela.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jela.h; sourceTree = "<group>"; };
-		CD94C48619AE71E100B948DA /* Jela.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jela.m; sourceTree = "<group>"; };
-		CD94C48819AE760100B948DA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CDEC9CCC19AB970100A9CF53 /* slanaKategorijaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slanaKategorijaCell.h; sourceTree = "<group>"; };
 		CDEC9CCD19AB970100A9CF53 /* slanaKategorijaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = slanaKategorijaCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD94C48A19AE767D00B948DA /* CoreData.framework in Frameworks */,
 				761F948C19A639DC0075C733 /* CoreGraphics.framework in Frameworks */,
 				761F948E19A639DC0075C733 /* UIKit.framework in Frameworks */,
 				761F948A19A639DC0075C733 /* Foundation.framework in Frameworks */,
@@ -115,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD94C48919AE760100B948DA /* CoreData.framework in Frameworks */,
 				761F94AC19A639DC0075C733 /* XCTest.framework in Frameworks */,
 				761F94AE19A639DC0075C733 /* UIKit.framework in Frameworks */,
 				761F94AD19A639DC0075C733 /* Foundation.framework in Frameworks */,
@@ -131,8 +123,6 @@
 				182262E319A7AF8500A4AD7F /* jelo.h */,
 				182262E419A7AF8500A4AD7F /* jelo.m */,
 				182262E019A7AADB00A4AD7F /* baza.xcdatamodeld */,
-				CD94C48519AE71E100B948DA /* Jela.h */,
-				CD94C48619AE71E100B948DA /* Jela.m */,
 				761F948F19A639DC0075C733 /* iChef */,
 				761F94B119A639DC0075C733 /* iChefTests */,
 				761F948819A639DC0075C733 /* Frameworks */,
@@ -152,7 +142,6 @@
 		761F948819A639DC0075C733 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD94C48819AE760100B948DA /* CoreData.framework */,
 				761F948919A639DC0075C733 /* Foundation.framework */,
 				761F948B19A639DC0075C733 /* CoreGraphics.framework */,
 				761F948D19A639DC0075C733 /* UIKit.framework */,
@@ -323,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD94C48719AE71E100B948DA /* Jela.m in Sources */,
 				768EEE3919A9E559002F90A7 /* ReceptiTableViewCell.m in Sources */,
 				CD91FC6219ACEE2100969183 /* slanaDetalji.m in Sources */,
 				CDEC9CCE19AB970100A9CF53 /* slanaKategorijaCell.m in Sources */,
@@ -505,7 +493,6 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iChefTests/iChefTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -524,7 +511,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iChef/iChef-Prefix.pch";
 				INFOPLIST_FILE = "iChefTests/iChefTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
