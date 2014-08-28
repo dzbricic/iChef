@@ -18,7 +18,7 @@
 
 @property (nonatomic, strong) IBOutlet UITableView *slanaKategorije;
 
-@property NSArray *kategorijeNiz;
+@property NSMutableArray *kategorijeNiz;
 
 
 

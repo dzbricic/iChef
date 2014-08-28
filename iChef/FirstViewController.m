@@ -21,7 +21,15 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    for (NSManagedObject *m in self.fetchedResultsController)
+    {
+        for(NSManagedObject *n in _kategorijeNiz)
+            if(![[n valueForKey:@"kategorija"] isEqualToString:[m valueForKey:@"kategorija"]])
+                [_kategorijeNiz addObject:m];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +52,7 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    NSManagedObject *object = [self.kategorijeNiz objectAtIndex:indexPath.row];
     cell.textLabel.text = [[object valueForKey:@"kategorija"] description];
 }
 
