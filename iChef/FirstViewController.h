@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
-<UITableViewDelegate, UITableViewDataSource>
+#import <CoreData/CoreData.h>
 
+@interface FirstViewController : UIViewController
+<UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
+
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @property (nonatomic, strong) IBOutlet UITableView *slanaKategorije;
 

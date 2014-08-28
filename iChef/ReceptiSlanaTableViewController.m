@@ -29,11 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if([self.nazivKategorije isEqualToString:@"sarmica"])
+    /*if([self.nazivKategorije isEqualToString:@"sarmica"])
         _slaniRecepti = @[@"first",@"Lagana sarma"];
     else
         _slaniRecepti = @[@"burek",@"burek2"];
-
+*/
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -75,9 +75,9 @@
     return cell;
 }
 
--(void)posaljiKategoriju:(NSString*)nazivKategorije
+-(void)posaljiKategoriju:(NSManagedObject*)nazivKategorije
 {
-    self.nazivKategorije = nazivKategorije;
+    [self.nazivKategorije valueForKey:@"kategorija"];
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

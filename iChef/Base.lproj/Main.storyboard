@@ -227,7 +227,6 @@
         <!--Slatka Detalji-->
         <scene sceneID="JaI-Wf-M93">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lSU-eR-l1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="dw0-Zo-ceV" customClass="slatkaDetalji" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hqg-gr-Yfc"/>
@@ -265,6 +264,7 @@
                         <outlet property="slatkaSlika" destination="hF2-zP-dXb" id="4ft-Qh-1q6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSU-eR-l1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2061" y="534"/>
         </scene>

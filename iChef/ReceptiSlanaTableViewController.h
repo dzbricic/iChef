@@ -9,11 +9,10 @@
 
 
 #import <UIKit/UIKit.h>
-
+#import <CoreData/CoreData.h>
 
 
 @interface ReceptiSlanaTableViewController : UITableViewController
-
 
 
 @property(nonatomic, strong) NSArray *slaniRecepti;
@@ -23,7 +22,7 @@
 @property(nonatomic, strong) NSString *nazivKategorije;
 
 
--(void)posaljiKategoriju:(NSString*)nazivKategorije;
+-(void)posaljiKategoriju:(NSManagedObject*)nazivKategorije;
 
 
 

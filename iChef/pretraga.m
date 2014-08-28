@@ -9,6 +9,7 @@
 #import "pretraga.h"
 #import "pretragaCell.h"
 #import "slanaDetalji.h"
+#import "Jela.h"
 
 @interface pretraga ()
 
@@ -71,15 +72,15 @@
     
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+/*-(pretragaCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"celijaPretraga";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    //pretragaCell *cell = [self.pretragaTabela dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    pretragaCell *cell = (pretragaCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[pretragaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     //if(self.pretragaTabela == self.searchDisplayController.searchResultsTableView)
     if(tableView == self.searchDisplayController.searchResultsTableView)
@@ -94,15 +95,56 @@
     
     return cell;
     
+}*/
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"celijaPretraga";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    //if(self.pretragaTabela == self.searchDisplayController.searchResultsTableView)
+    if(tableView == self.searchDisplayController.searchResultsTableView)
+    {
+        
+        cell.textLabel.text = [self.nizRezultata objectAtIndex:indexPath.row];
+    }
+    else
+        // Configure the cell...
+    {
+        cell.textLabel.text = [self.nizJela objectAtIndex:indexPath.row];
+    }
+    
+    return cell;
+    
 }
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([[segue identifier] isEqualToString:@"pretragaRezultat"])
     {
-        NSIndexPath *indeks = [self.pretragaTabela indexPathForSelectedRow];
+       /* NSIndexPath *indeks = [self.pretragaTabela indexPathForSelectedRow];
         NSString *string = [_nizJela objectAtIndex:indeks.row];
         [[segue destinationViewController] posaljiNaziv:string];
+        */
+        
+        NSIndexPath *indeks = nil;
+        NSString *j = nil;
+        
+        if(self.searchDisplayController.active){
+            indeks = [self.searchDisplayController.searchResultsTableView indexPathForSelectedRow];
+            j = [_nizRezultata objectAtIndex:indeks.row];
+          }
+        else
+        {
+            indeks = [self.pretragaTabela indexPathForSelectedRow];
+            j = [_nizJela objectAtIndex:indeks.row];
+        }
+        
+        [[segue destinationViewController] posaljiNaziv:j];
         
     }
 }
